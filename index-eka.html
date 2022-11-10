@@ -5,9 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>PukulEnam Newsletter</title>
-    
+        <script type="text/javascript" src="assets/js/signup.js" ></script>
         
         <link rel="icon" sizes="192x192" href="assets/img/logo.png">
+
+        <script src="assets/js/sweetalert2.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js" ></script>
 
         <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/app.css">
@@ -48,9 +51,10 @@
             <div class="left-box d-flex f-c">
                 <h1>PukulEnam Newsletter</h1>
                 <p class="mb-5">Layanan yang akan mengirimkan berita terhangat ke inbox emailmu setiap pukul enam pagi waktu Indonesia Barat.</p>
-               
+               <h2>Mulai daftar sekarang!</h2>
+               <br/>
                 <form action="assets/php/signup.php" method="POST" accept-charset="utf-8" name="signup-form" id="signup-form">
-                    <label for="email">Mulai daftar sekarang!</label>
+                    
                     <div class="d-flex">
                     <div class="form-sign">
                         <div class="form-group">
@@ -61,8 +65,29 @@
                             <input type="email" placeholder="Alamat Email" name="email" id="email"  class="form-control">                       
                         </div>
                         <br/>
-                    <button type="submit">Daftar</button>
-                   
+                        <div style="display:none;"><br/>
+                            <label for="hp">HP</label><br/>
+                            <input type="text" name="hp" id="hp"/>
+                        </div>
+                            <input type="hidden" name="list" value="6JXirIhvMqB763TjQb9v8QqA"/>
+                            <input type="hidden" name="subform" value="yes"/>
+                        <div>
+                            <div class="container-fluid">
+                                
+                                   
+                                        <div class="text-center">
+                                            <div id="submit" class="submit">
+                                                <button type="submit" id="submit-btn" onclick="myFunction()"/>Daftar
+                                                <!-- <p style="margin-top:10px;" id="status"></p> -->
+                                            </div>
+                                            <div id="spinner" style="visibility:hidden;">
+                                            <div class="spinner-border text-danger"></div>
+                                            </div>
+                                            
+                                        </div>
+         
+                            </div>
+                        </div>
                     </div>
                    
                     </div>  

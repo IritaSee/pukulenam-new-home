@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PukulEnam Newsletter</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js" ></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="assets/js/signup.js" ></script>
+    
+    <script src="assets/js/sweetalert2.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/logo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H076NVRMCH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-H076NVRMCH');
+        </script>
+    </head>
+
+<body class="h-auto d-flex flex-column">
+    <header style="margin-bottom: 10px;">
+        <div class="container">
+            <nav class="navbar navbar-dark bg-transparenet">
+                <!--<a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" style="width:50px;height:50px;" alt="logo">
+                </a>-->
+                <!--<span class="navbar-text d-block d-sm-inline-block align-self-stretch">contact@pukulenam.id</span>-->
+            </nav>
+        </div>
+    </header>
+    <main class="my-auto">
+        <div class="container">
+            <div class="text-center">
+            <img src="assets/images/logo.png" style="max-width:130px; margin-bottom:20px" alt="logo">
+            </div>  
+            <h1 class="page-title">PukulEnam Newsletter</h1>
+            <p class="page-description-atas">Kami menyediakan layanan yang akan mengirimkan berita terhangat ke inbox emailmu!</p>
+            <p class="page-description-tengah">Setiap hari pada 6 pagi (Waktu Indonesia Barat)</p>
+            
+
+            <div class="text-center">
+                <p class="page-description-bawah">Ingin tahu bagaimana Newsletter kami sebelum mendaftar?</p>
+                <a href="last-campaign.php" style="margin-bottom:40px;" class="btn btn-danger rounded-pill">Lihat edisi hari ini</a>
+            </div>
+            <p class="page-description-bawah">Ingin menikmati sarapanmu ditemani berita kami?</p>
+            <h1 class="subscribe-p">Daftar ke newsletter kami sekarang!</h1>
+
+            <div class="text-center">
+            <form action="assets/php/signup.php" method="POST" accept-charset="utf-8" name="signup-form" id="signup-form">
+	            <div class="form-sign">
+                    <div class="form-group">
+                    <input type="text" placeholder="nama" name="name" id="name" style="opacity:0.8; width:300px;" class="border rounded-pill text-center" maxlength="15"/>
+                </div>
+                <div class="form-group">
+	                <input type="email" placeholder="email" name="email" id="email" style="opacity:0.8; width:300px; text-transform: lowercase;" class="border rounded-pill text-center"/>
+                </div>
+                </div>  
+                <div style="display:none;"><br/>
+	                <label for="hp">HP</label><br/>
+	                <input type="text" name="hp" id="hp"/>
+	            </div>
+	                <input type="hidden" name="list" value="6JXirIhvMqB763TjQb9v8QqA"/>
+	                <input type="hidden" name="subform" value="yes"/>
+                <div>
+                    <div class="container-fluid">
+                        
+                           
+                                <div class="text-center">
+                                    <div id="submit" class="submit">
+                                        <input type="submit" class="btn btn-danger rounded-pill" value="Daftar" id="submit-btn" style="width:150px;" onclick="myFunction()"/>
+                                        <p style="margin-top:10px;" id="status"></p>
+                                    </div>
+                                    <div id="spinner" style="visibility:hidden;">
+                                    <div class="spinner-border text-danger"></div>
+                                    </div>
+                                    
+                                </div>
+ 
+                    </div>
+                </div>
+            </form>
+            </div>
+        
+        </div>
+        <footer>
+            <div class="container">
+            <div class="text-center">
+                <p class="connected-p">Tetap Terhubung</p>
+                <nav class="footer-social-links">
+                    <a href="https://instagram.com/pukulenam.id/" class="social-link"><i class="mdi mdi-instagram"></i></a>
+                    <a href="https://linkedin.com/company/pukulenam" class="social-link"><i class="mdi mdi-linkedin"></i></a>
+                    <a href="mailto:contact@pukulenam.id" class="social-link"><i class="mdi mdi-email"></i></a>
+                </nav>
+                </div>  
+            </div>
+        </footer>
+    </main>
+    
+    <script>
+    function myFunction() {
+    var button = document.getElementById("submit");
+    var spinner = document.getElementById("spinner");
+    button.style.display = "none";
+    spinner.style.visibility = "visible";
+  }
+</script>
+    
+</body>
+
+
+</html>
